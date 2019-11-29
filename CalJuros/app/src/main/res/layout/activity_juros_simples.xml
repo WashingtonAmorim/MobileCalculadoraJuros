@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".JurosSimples">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="117dp"
+            android:text="Calculo Juros Simples"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginStart="117dp" />
+
+    <EditText
+        android:id="@+id/valorInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Valor Inicial (R$)"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/taxaJuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valorInicial"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Taxa de Juros (%)"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/tempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taxaJuros"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tempo (Mês)"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tempo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="Calcular"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/juros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btCalcular"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/valorFuturo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/juros"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/valorParcela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/valorFuturo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+</RelativeLayout>
